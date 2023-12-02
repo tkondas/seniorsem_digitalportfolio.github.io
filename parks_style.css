@@ -1,0 +1,197 @@
+*, *:before, *::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+header{
+    background-color: #113ccf;
+    font-family: 'Bebas Neue', cursive;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-size: 36px;
+}
+header nav ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+header nav ul a {
+    color: white;
+    text-decoration: none;
+}
+header nav ul a:hover {
+    color: #895b87;
+}
+.menu{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 0 10px;
+}
+.menu ul{
+    display: flex;
+    gap: 15px;
+    font-size: 28px;
+}
+.search{
+    width: 50px;
+}
+.hero-content{
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    color: white;
+    font-size: 100px;
+}
+#gradient{
+    position: relative;
+}
+#gradient::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5));
+}
+main h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    padding-top: 35px; 
+    text-align: center;
+}
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+article h2{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+aside{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%
+}
+aside h2{
+    font-size: 50px;
+}
+main article{
+    max-width: 32%;
+    position: relative;
+}
+.info a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+article .info{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+    visibility: hidden;
+    transition: all 250ms ease-in-out;
+}
+article .info h2{
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 250ms ease-in-out;
+}
+article:hover .info{
+    visibility: visible;
+    background-color: rgba(255, 211, 79, 0.45);
+    transition: background-color 250ms ease-in-out;
+}
+article:hover .info h2{
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 250ms ease-in-out;
+}
+.text h2{
+    color: black;
+}
+.text p{
+    font-family: 'Poppins', sans-serif;
+}
+.sections{
+    max-width: 1200px;
+    margin: auto;
+}
+.sections h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    padding-top: 35px;
+    text-align: center;
+}.events h2{
+    color: #6FCCDD;
+    font-size: 36px;
+}
+.spring, .future{
+    display: flex;
+    justify-content: space-between;
+}
+.spring p, .future p{
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    margin: 0 2rem 2rem;
+}
+.btn{
+    padding: 10px;
+    border: 0;
+    border-radius: 40px;
+    font-size: 18px;
+    background-color: #6FCCDD;
+    color: white;
+}
+footer{
+    background-color: #113ccf;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+footer ul{
+    display: flex;
+    gap: 15px;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    align-items: center;
+    padding: 0 35px;
+}
+footer ul a{
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer ul a:hover {
+    color: #895b87;
+}
+.ending{
+    display: flex;
+    gap: 15px;
+    color: white;
+    font-size: 28px;
+    font-family: 'Bebas Neue', cursive;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="images/logo.png" alt="book with stars"></a>
+                <h1>Disney Bedtime Stories</h1>
+            </div>
+                <input type="checkbox" id="burger">
+                <label for="burger"></label>
+                <!-- <div class="menu"> -->
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="marvel.html">Marvel</a></li>
+                        <li><a href="pixar.html">Pixar</a></li>
+                        <li><a href="parks.html">Parks</a></li>
+                    </ul>
+                </div>
+                <a href="#"><img class= "search" src="images/glass.png" alt="search icon"></a>
+            </div>
+           
+        </nav>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+         <div class="swiper-slide">
+             <img src="images/home/walt_disney_world.jpg" alt="Mickey and Friends outside of the Walt Disney Castle">
+             <div class="feature">
+                <h2>Disney Parks</h2>
+                <a href="parks.html"><button class="btn">Learn More</button></a>
+             </div>
+         </div>
+         <div class="swiper-slide">
+             <img src="images/home/marvel.jpeg" alt="Marvel Heroes">
+             <div class="feature">
+                <h2>Marvel</h2>
+                <a href="marvel.html"><button class="btn">Learn More</button></a>
+             </div>
+         </div>
+         <div class="swiper-slide">
+             <img src="images/Home/Pixar.jpeg" alt="Pixar Studios on an iPad">
+             <div class="feature">
+                <h2>Pixar</h2>
+                <a href="pixar.html"><button class="btn">Learn More</button></a>
+             </div>
+         </div>
+        
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    </div>
+ 
+ 
+ 
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+ 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+ 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+ 
+ });
+    </script>
+    <main>
+        <h1>Disney Exclusive</h1>
+       <article>
+            <img src="images/Home/disney_world_christmas.jpg" alt="Mickey and Minnie on a float with a tree">
+            <div class="info">
+                <h2>A Christmas Wonderland</h2>
+                <h3><i>Join Us at Walt Disney World</i></h3>
+                <p>Disney World is a world-class family destination 365 days a year, but it gets extra special at the holidays — especially for the 23 nights out of the year when the Magic Kingdom hosts Mickey's Very Merry Christmas Party. But even beyond the party, there are the decorated resorts, the life-size gingerbread house, special treats and more.</p>
+                <a href="#"><button class="btn">Read More</button></a>
+            </div>
+       </article>
+       <br>
+       <article>
+            <img src="images/home/the_santa_clause.jpg" alt="Santa Claus with his Son">
+            <div class="info">
+                <h2>Christmas Magic</h2>
+                <h3><i>Watch Some of Our Holiday Movies</i></h3>
+                <p>Get your hot chocolate, cookies and ugly sweaters ready for holiday movies! Stream our favorite holiday movies with the family!</p>
+                <a href="#"><button class="btn">Stream Now</button></a>
+            </div>
+        </article>
+        <br>
+        <article>
+            <img src="images/Home/presents_idea.jpeg" alt="Disney Christmas presents">
+            <div class="info">
+                <h2>Christmas Presents</h2>
+                <h3><i>Some of Our Favorite Gift Ideas</i></h3>
+                <p>Don't know what to buy a Disney lover for Christmas! Look at our variety of Christmas present ideas. There is a lot to chose from for your Disney loving friend or family!</p>
+                <a href="#"><button class="btn">Buy Now</button></a>
+            </div>
+        </article>
+    </main>
+    <br>
+    <footer>
+        <div class="ending">
+            <a href="index.html"><img src="images/logo.png" alt="Book with stars"></a>
+            <h3>Disney Bedtime Stories</h3>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="marvel.html">Marvel</a></li>
+            <li><a href="#">Pixar</a></li>
+            <li><a href="parks.html">Parks</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
